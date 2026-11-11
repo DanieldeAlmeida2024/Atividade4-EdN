@@ -1,0 +1,15 @@
+@startuml
+title 3/verificacaoDeSenha.py — fluxo de decisão
+start
+:Ler texto da senha;
+if (len(senha)<8?) then (sim)
+:Rejeitar por comprimento;
+else (não)
+if (há algum dígito?) then (sim)
+:Aceitar pela regra didática;
+else (não)
+:Rejeitar sem dígito;
+endif
+endif
+stop
+@enduml

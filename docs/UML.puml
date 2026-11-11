@@ -1,8 +1,15 @@
 @startuml
-title Atividade4-EdN - fluxo conceitual
-actor Aluno
-component "Exercicio Python" as Exercicio
-component "Terminal" as Terminal
-Aluno --> Exercicio
-Exercicio --> Terminal
+title Atividade4-EdN — scripts Python
+actor "Usuário do terminal" as U
+component "1/calculadora.py" as P0
+U --> P0 : executar
+component "2/registroDeNotas.py" as P1
+U --> P1 : executar
+component "3/verificacaoDeSenha.py" as P2
+U --> P2 : executar
+component "4/verificadorParOuImpar.py" as P3
+U --> P3 : executar
+note bottom
+Programas independentes; sem classes artificiais.
+end note
 @enduml
