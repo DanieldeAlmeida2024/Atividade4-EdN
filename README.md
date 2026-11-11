@@ -1,3 +1,31 @@
+# Atividade4-EdN — exercícios de Python
+
+Exercícios de calculadora com tratamento de erros, notas, senha e verificação de números.
+
+## Requisitos
+Python 3.10+ e terminal local. Exercícios separados, não API/serviço em produção.
+
+## Executar um exercício
+```bash
+python 1/calculadora.py
+```
+
+**Outros scripts:** `1/calculadora.py, 2/registroDeNotas.py, 3/verificacaoDeSenha.py, 4/verificadorParOuImpar.py`.
+
+## Verificar sintaxe e documentação
+```bash
+python -m unittest discover -s tests -v
+```
+
+O teste acima **não** compara respostas dos exercícios aos enunciados; esses cenários precisam de testes de comportamento adicionais.
+
+## Navegação
+[Requisitos](docs/REQUISITOS.md), [estrutura](docs/ARQUITETURA.md), [UML](docs/UML.puml), [plano de testes](docs/PLANO_TESTES.md) e [guia de IA](AGENTS.md).
+
+---
+
+## Enunciados originais
+
 ## Atividade Prática 04
 
 ### 1. 
