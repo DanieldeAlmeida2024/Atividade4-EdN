@@ -17,11 +17,11 @@ python 1/calculadora.py
 python -m unittest discover -s tests -v
 ```
 
-A suíte agora executa entradas e saídas reais dos quatro exercícios, incluindo operações inválidas, recuperação de erros, notas descartadas, senha e contagem par/ímpar.
+A suíte executa entradas e saídas dos quatro exercícios, incluindo operações inválidas, recuperação de erros, notas descartadas, senha e contagem par/ímpar.
 
-## O que foi corrigido
+## Regras e tratamento de erros
 
-- A **calculadora** usa uma função testável, rejeita divisão por zero, operações inválidas, `NaN` e infinito, e permite tentar novamente sem captura genérica de exceções. Ao receber fim de entrada, encerra sem traceback.
+- A **calculadora** usa uma função testável, rejeita divisão por zero, operações inválidas, `NaN` e infinito, e permite novas tentativas sem captura genérica de exceções. Ao receber fim de entrada, encerra sem traceback.
 - O registro de notas e a contagem par/ímpar reconhecem o comando `fim` mesmo com espaços.
 - A validação de senha atende **somente** às regras pedagógicas: mínimo de 8 caracteres e um dígito. Não equivale a uma política de senha segura para sistemas reais.
 - O CI executa os testes em Python 3.12, sem dependências externas.
