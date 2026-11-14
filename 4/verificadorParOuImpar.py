@@ -8,7 +8,7 @@ def verificar_par_ou_impar():
     while True:
         entrada = input("Insira um número inteiro: ")
         
-        if entrada.lower() == 'fim':
+        if entrada.strip().lower() == 'fim':
             break
 
         try:
