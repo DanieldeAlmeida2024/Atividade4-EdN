@@ -12,12 +12,19 @@ python 1/calculadora.py
 
 **Outros scripts:** `1/calculadora.py, 2/registroDeNotas.py, 3/verificacaoDeSenha.py, 4/verificadorParOuImpar.py`.
 
-## Verificar sintaxe e documentação
+## Testes de comportamento
 ```bash
 python -m unittest discover -s tests -v
 ```
 
-O teste acima **não** compara respostas dos exercícios aos enunciados; esses cenários precisam de testes de comportamento adicionais.
+A suíte agora executa entradas e saídas reais dos quatro exercícios, incluindo operações inválidas, recuperação de erros, notas descartadas, senha e contagem par/ímpar.
+
+## O que foi corrigido
+
+- A **calculadora** usa uma função testável, rejeita divisão por zero, operações inválidas, `NaN` e infinito, e permite tentar novamente sem captura genérica de exceções. Ao receber fim de entrada, encerra sem traceback.
+- O registro de notas e a contagem par/ímpar reconhecem o comando `fim` mesmo com espaços.
+- A validação de senha atende **somente** às regras pedagógicas: mínimo de 8 caracteres e um dígito. Não equivale a uma política de senha segura para sistemas reais.
+- O CI executa os testes em Python 3.12, sem dependências externas.
 
 ## Navegação
 [Requisitos](docs/REQUISITOS.md), [estrutura](docs/ARQUITETURA.md), [UML](docs/UML.puml), [plano de testes](docs/PLANO_TESTES.md) e [guia de IA](AGENTS.md).
