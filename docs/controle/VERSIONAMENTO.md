@@ -11,3 +11,7 @@
 | [Testes](../testes/PLANO_DE_TESTES.md) | Atividade4-EdN-TST | 1.0.0 |
 
 **Histórico:** v1.0.0 cria inventário individual e rastreabilidade de casos. MAJOR=entrada/saída incompatível, MINOR=novo exercício/fluxo, PATCH=correção editorial. Revisões exigem SHA e resultados reais.
+
+## Revisão de reconciliação — 14/11/2026
+
+Arquivos específicos da antiga modelagem de 11/11 preservados com identificação histórica, sem reverter testes ou código funcional da main. A evidência dos testes aprovados é obtida nas execuções atuais do CI.
