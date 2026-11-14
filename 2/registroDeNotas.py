@@ -7,7 +7,7 @@ def registrar_notas():
     while True:
         entrada = input("Nota: ")
         
-        if entrada.lower() == 'fim':
+        if entrada.strip().lower() == 'fim':
             break
 
         try:
