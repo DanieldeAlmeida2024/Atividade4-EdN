@@ -80,3 +80,9 @@ A suíte executa entradas e saídas dos quatro exercícios, incluindo operaçõe
 ### 4. 
     Crie um programa que solicite ao usuário que insira números inteiros. O programa deve continuar solicitando números até que o usuário digite 'fim'. Para cada número inserido, o programa deve informar se é par ou ímpar. Se o usuário inserir algo que não seja um número inteiro, o programa deve
     informar o erro e continuar. No final, o programa deve exibir a quantidade de números pares e ímpares inseridos.
+
+## Documentação específica da atividade
+
+[Especificação dos scripts](docs/projeto/ESPECIFICACAO.md) · [Matriz histórica de testes](docs/testes/PLANO_DE_TESTES.md) · [UML](docs/uml/README.md) · [Versionamento](docs/controle/VERSIONAMENTO.md).
+
+A documentação original é preservada como referência de estudo. Os critérios vigentes e os resultados de CI atualizados estão no plano de testes principal e no GitHub Actions.
