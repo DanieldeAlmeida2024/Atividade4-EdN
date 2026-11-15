@@ -64,20 +64,20 @@ class TestesAtividade04(unittest.TestCase):
         self.assertFalse(senha.verificar_senha_forte("abcdefgh")[0])
 
     def test_fim_de_entrada_sem_comando_fim_preserva_resultado(self):
-        p = executar("2/registroDeNotas.py", "7\\n9\\n")
+        p = executar("2/registroDeNotas.py", "7\n9\n")
         self.assertEqual(0, p.returncode, p.stderr)
         self.assertIn("Entrada encerrada", p.stdout)
         self.assertIn("8.00", p.stdout)
         self.assertNotIn("Traceback", p.stderr)
 
-        p = executar("4/verificadorParOuImpar.py", "2\\n3\\n")
+        p = executar("4/verificadorParOuImpar.py", "2\n3\n")
         self.assertEqual(0, p.returncode, p.stderr)
         self.assertIn("PARES inseridos: 1", p.stdout)
         self.assertIn("ÍMPARES inseridos: 1", p.stdout)
         self.assertNotIn("Traceback", p.stderr)
 
     def test_senha_eof_nao_afirma_validacao(self):
-        p = executar("3/verificacaoDeSenha.py", "curta\\n")
+        p = executar("3/verificacaoDeSenha.py", "curta\n")
         self.assertEqual(0, p.returncode, p.stderr)
         self.assertIn("Entrada encerrada sem validar senha", p.stdout)
         self.assertNotIn("SUCESSO", p.stdout)
