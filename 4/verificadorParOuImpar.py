@@ -6,7 +6,11 @@ def verificar_par_ou_impar():
     print("Insira números inteiros. Digite 'fim' para encerrar e ver o resumo.")
 
     while True:
-        entrada = input("Insira um número inteiro: ")
+        try:
+            entrada = input("Insira um número inteiro: ")
+        except EOFError:
+            print("Entrada encerrada; mantendo contagem anterior.")
+            break
         
         if entrada.strip().lower() == 'fim':
             break
