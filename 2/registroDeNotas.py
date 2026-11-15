@@ -5,7 +5,11 @@ def registrar_notas():
     print("Insira as notas (entre 0 e 10). Digite 'fim' para calcular a média e sair.")
 
     while True:
-        entrada = input("Nota: ")
+        try:
+            entrada = input("Nota: ")
+        except EOFError:
+            print("Entrada encerrada; calculando com notas válidas já inseridas.")
+            break
         
         if entrada.strip().lower() == 'fim':
             break

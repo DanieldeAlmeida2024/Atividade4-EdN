@@ -14,7 +14,11 @@ def validar_senha():
     print("Digite 'sair' a qualquer momento para encerrar.")
 
     while True:
-        entrada_senha = input("Insira uma senha: ")
+        try:
+            entrada_senha = input("Insira uma senha: ")
+        except EOFError:
+            print("Entrada encerrada sem validar senha.")
+            return
         
         if entrada_senha.strip().lower() == 'sair':
             print("Programa encerrado pelo usuário.")
